@@ -1,0 +1,2 @@
+<p:chart type="bar" model="#{chartBean.combinedModel}"
+         style="height:250px" />

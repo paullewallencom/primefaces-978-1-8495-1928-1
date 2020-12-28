@@ -1,0 +1,2 @@
+<p:calendar value="#{calendarBean.date}" effect="bounce"
+            effectDuration="slow" />

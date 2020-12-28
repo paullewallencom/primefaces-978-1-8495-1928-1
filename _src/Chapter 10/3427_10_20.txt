@@ -1,0 +1,10 @@
+@Named
+@ViewScoped
+public class ExtendCsvBean implements Serializable {
+    
+    private String firstName;
+    private String lastName;
+
+    // getters / setters
+	...
+}

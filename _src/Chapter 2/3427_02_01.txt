@@ -1,0 +1,18 @@
+.ui-picklist .ui-picklist-list {
+    height: 200px;
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: 200px;
+}
+
+.ui-widget-content {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #a8a8a8;
+    color: #4f4f4f;
+}
+
+.ui-corner-all {
+    border-radius: 3px;
+}

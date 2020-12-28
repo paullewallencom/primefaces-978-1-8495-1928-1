@@ -1,0 +1,12 @@
+<h:panelGroup id="msg1">
+    <p:messages for="save" showDetail="true"/>
+    <p:growl for="change" showDetail="true"/>
+    <p:growl globalOnly="true" showDetail="true"/>
+</h:panelGroup>
+
+<p:commandButton value="Save" update="msg1"
+    action="#{targetableMessagesBean.addSaveMessage}"/>
+<p:commandButton value="Change" update="@form"
+    action="#{targetableMessagesBean.addChangeMessage}"/>
+<p:commandButton value="Delete" update="@form"
+    action="#{targetableMessagesBean.addDeleteMessage}"/>

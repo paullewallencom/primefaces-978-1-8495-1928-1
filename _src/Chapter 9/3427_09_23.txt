@@ -1,0 +1,2 @@
+Circle circle =new Circle(new LatLng(41.073399, 29.051971), 5000);
+circleModel.addOverlay(circle);

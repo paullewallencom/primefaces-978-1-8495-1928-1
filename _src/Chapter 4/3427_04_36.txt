@@ -1,0 +1,8 @@
+<style type="text/css">
+    .ui-grid > .ui-grid-row > div {
+        background-color: #cccccc;
+        border: 1px solid #dddddd;
+        padding: 10px 0;
+        text-align: center;
+    }
+</style>

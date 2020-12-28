@@ -1,0 +1,23 @@
+<h:form id="form1">
+  <p:commandButton update=":form2:display" 
+      action="#{basicPPRBean.updateValue}" value="Update"/>
+</h:form>
+
+<h:form id="form2">
+  <h:outputText id="display" value="#{basicPPRBean.value}"/>
+</h:form>
+
+@Named
+@ViewScoped
+public class BasicPPRBean implements Serializable {
+
+    private String value;
+    
+    public String updateValue() {
+        value = String.valueOf(System.currentTimeMillis());
+        return null;
+    }
+
+    // getter / setter
+	...
+}

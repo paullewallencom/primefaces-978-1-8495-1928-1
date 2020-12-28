@@ -1,0 +1,13 @@
+<p:dataTable id="singleSelection" var="car"
+             value="#{dataTableBean.cars}" rowKey="#{car.name}"
+             selection="#{dataTableBean.selectedCar}"
+             selectionMode="single">
+   <p:column headerText="Year">#{car.year}</p:column>
+   <p:column headerText="Name">#{car.name}</p:column>
+   <f:facet name="footer">
+      <p:commandButton id="viewButton1" value="View"
+         icon="ui-icon-search" process="singleSelection"
+         update=":mainForm:display"
+         oncomplete="PF('carDialog').show()" />
+    </f:facet>
+</p:dataTable>

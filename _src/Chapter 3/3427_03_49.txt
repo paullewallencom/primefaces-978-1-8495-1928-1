@@ -1,0 +1,7 @@
+<h:outputText id="outputRange" value="The selected range:
+    [#{sliderBean.rangeStart}, #{sliderBean.rangeEnd}]" />
+<p:slider for="rangeStart,rangeEnd" style="width:200px"
+   range="true" display="outputRange"
+   displayTemplate="The selected range: [{min}, {max}]" />
+<h:inputHidden id="rangeStart" value="#{sliderBean.rangeStart}" />
+<h:inputHidden id="rangeEnd" value="#{sliderBean.rangeEnd}" />

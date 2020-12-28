@@ -1,0 +1,4 @@
+p:calendar id="restrictedDates" value="#{calendarBean.date}"
+   mode="inline"
+   mindate="#{calendarBean.yesterday}"
+   maxdate="#{calendarBean.tomorrow}" />

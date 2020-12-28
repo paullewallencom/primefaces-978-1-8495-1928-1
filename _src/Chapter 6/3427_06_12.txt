@@ -1,0 +1,3 @@
+<p:breadCrumb homeDisplay="text">
+    ...
+</p:breadCrumb>

@@ -1,0 +1,5 @@
+<p:inplace editor="true">
+   <p:ajax event="save"
+      listener="#{inplaceBean.handleSave}" update="growl" />
+   <h:inputText value="Edit Me!" />
+</p:inplace>

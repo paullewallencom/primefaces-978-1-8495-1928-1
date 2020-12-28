@@ -1,0 +1,2 @@
+List<Car> cars = new ArrayList<Car>(millions_of_cars);
+LazyDataModel<Car>lazyModel = new LazyCarDataModel(cars);

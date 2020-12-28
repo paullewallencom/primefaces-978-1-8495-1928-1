@@ -1,0 +1,6 @@
+<p:autoComplete value="#{autoCompleteBean.txt1}"
+   completeMethod="#{autoCompleteBean.complete}">
+   <p:ajax event="itemSelect"
+      listener="#{autoCompleteBean.handleSelect}"
+      update="messages" />
+</p:autoComplete>

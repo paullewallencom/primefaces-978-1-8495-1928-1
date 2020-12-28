@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    function setMask() {
+        var c = PF('cbxMask');
+        var i = PF('phoneMask');
+        if (c.isChecked()) {
+            i.jq.mask('(99)9-9999-9999');
+            i.jq.focus();
+        } else {
+            i.jq.mask('(99)9999-9999');
+            i.jq.focus();
+        }
+
+    }
+</script>
+
+<p:inputMask id="phone" widgetVar="phoneMask" 
+    value="#{inputMaskBean.phone2}" mask="(99)9999-9999"/>
+<p:selectBooleanCheckbox itemLabel="Extended Mask" 
+    onchange="setMask()" widgetVar="cbxMask"/>

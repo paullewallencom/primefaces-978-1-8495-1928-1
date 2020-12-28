@@ -1,0 +1,6 @@
+<p:outputPanel deferred="true" deferredMode="visible">
+    <h3>Loaded after the panel becomes visible
+        on page scroll.</h3>
+    <p>The Volkswagen CC is a four-door coupe version of
+       the Volkswagen Passat.</p>
+</p:outputPanel>

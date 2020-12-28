@@ -1,0 +1,5 @@
+<p:dataTable id="editingRowMode" var="car"
+             value="#{dataTableBean.cars}"
+             rowKey="#{car.name}" editable="true"
+             editingRow="#{car.year > 2000}">
+</p:dataTable>

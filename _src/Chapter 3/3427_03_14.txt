@@ -1,0 +1,18 @@
+<p:autoComplete id="grouped"
+  value="#{autoCompleteBean.selectedCar}"
+    completeMethod="#{autoCompleteBean.completeCarContains}
+    var="car" itemLabel="#{car.name}" itemValue="#{car}"
+    forceSelection="true"
+    groupBy="#{autoCompleteBean.getGroup(car)}">
+    <f:converter 
+  converterId="org.primefaces.cookbook.converter.CarConverter" />
+  <p:column>
+    <p:graphicImage
+      value="/resources/images/autocomplete/#{car.name}.png"/>
+  </p:column>
+  <p:column>#{car.name}</p:column>
+</p:autoComplete>
+
+public char getGroup(Car car) {
+	return car.getName().charAt(0);
+}

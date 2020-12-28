@@ -1,0 +1,11 @@
+<p:treeTable id="withAJAX" value="#{treeTableBean.root}"
+             var="element">
+   <p:ajax event="expand" update=":mainForm:growl"
+           listener="#{treeTableBean.onNodeExpand}" />
+   <p:ajax event="collapse" update=":mainForm:growl"
+           listener="#{treeTableBean.onNodeCollapse}" />
+   <p:ajax event="select" update=":mainForm:growl"
+           listener="#{treeTableBean.onNodeSelect}" />
+   <p:ajax event="unselect" update=":mainForm:growl"
+           listener="#{treeTableBean.onNodeUnselect}" />
+</p:treeTable>

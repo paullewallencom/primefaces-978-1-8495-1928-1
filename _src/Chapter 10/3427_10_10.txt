@@ -1,0 +1,45 @@
+<p:messages id="messages"/>
+
+<h:panelGrid id="grid" columns="2" cellpadding="3"
+             style="margin-bottom:10px;">
+    <p:outputLabel for="input1" value="Boolean @AssertFalse"/>
+    <p:selectBooleanCheckbox id="input1" value="#{bvBean.supported}"/>
+
+    <p:outputLabel for="input2" value="Boolean @AssertTrue"/>
+    <p:selectBooleanCheckbox id="input2" value="#{bvBean.active}"/>
+
+    <p:outputLabel for="input3" value="BigDecimal @DecimalMin / Max"/>
+    <p:inputText id="input3" value="#{bvBean.discount}"/>
+
+    <p:outputLabel for="input4" value="Double @Digits"/>
+    <p:inputText id="input4" value="#{bvBean.price}"/>
+
+    <p:outputLabel for="input5" value="Date @Future"/>
+    <p:inputText id="input5" value="#{bvBean.eventDate}">
+        <f:convertDateTime pattern="MM/dd/yyyy"/>
+    </p:inputText>
+
+    <p:outputLabel for="input7" value="Date @Past"/>
+    <p:inputText id="input7" value="#{bvBean.birthday}">
+        <f:convertDateTime pattern="MM/dd/yyyy"/>
+    </p:inputText>
+
+    <p:outputLabel for="input8" value="int @Min / @Max"/>
+    <p:inputText id="input8" value="#{bvBean.quantity}"/>
+
+    <p:outputLabel for="input9" value="String @NotNull"/>
+    <p:inputText id="input9" value="#{bvBean.username}"/>
+
+    <p:outputLabel for="input10" value="String @Null"/>
+    <p:inputText id="input10" value="#{bvBean.unusedString}"/>
+
+    <p:outputLabel for="input11" value="String @Pattern"/>
+    <p:inputText id="input11" value="#{bvBean.phoneNumber}"/>
+
+    <p:outputLabel for="input12" value="String @Size"/>
+    <p:inputText id="input12" value="#{bvBean.briefMessage}"/>
+</h:panelGrid>
+
+<p:commandButton validateClient="true"
+                 value="Submit" ajax="false"
+                 onclick="PF('inputValuesWdgt').hide()"/>

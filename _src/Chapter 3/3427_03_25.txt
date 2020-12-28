@@ -1,0 +1,13 @@
+<p:selectOneMenu id="carPOJO"
+    value="#{selectOneMenuBean.selectedCar}" var="car">
+    <f:converter
+  converterId="org.primefaces.cookbook.converter.CarConverter" />
+    <f:selectItems value="#{selectOneMenuBean.cars}" var="c"
+            itemLabel="#{c.name}" itemValue="#{c}" />
+    <p:column>
+        <p:graphicImage
+          value="/resources/images/autocomplete/#{car.name}.png"
+          width="80" height="50"/>
+    </p:column>
+    <p:column>#{car.name}</p:column>
+</p:selectOneMenu>

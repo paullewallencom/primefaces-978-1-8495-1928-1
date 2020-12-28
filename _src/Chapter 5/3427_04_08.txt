@@ -1,0 +1,9 @@
+public void onRowSelect(SelectEvent event) {
+   MessageUtil.addInfoMessage("car.selected", 
+                       ((Car) event.getObject()).getName());
+}
+
+public void onRowUnselect(UnselectEvent event) {
+   MessageUtil.addInfoMessage("car.unselected", 
+                  ((Car) event.getObject()).getName());
+}

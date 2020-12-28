@@ -1,0 +1,3 @@
+firstName=First Name
+lastName=Last Name
+invalid.unicode={0} may only contain letters, spaces, hyphens and apostrophes

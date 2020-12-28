@@ -1,0 +1,9 @@
+<p:panelGrid columns="2" styleClass="pGrid">
+...
+</p:panelGrid>
+
+<style type="text/css">
+   .pGrid tr, .pGrid td {
+      border: none;
+   }
+</style>

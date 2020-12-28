@@ -1,0 +1,10 @@
+<p:ajax event="dateSelect" listener="#{scheduleBean.onDateSelect}"
+        update=":mainForm:growl" />
+<p:ajax event="eventSelect" update=":mainForm:growl"
+        listener="#{scheduleBean.onEventSelect}"/>
+<p:ajax event="eventMove" listener="#{scheduleBean.onEventMove}" 
+        update=":mainForm:growl" />
+<p:ajax event="eventResize" update=":mainForm:growl"
+        listener="#{scheduleBean.onEventResize}" />
+<p:ajax event="viewChange" listener="#{scheduleBean.onViewChange}" 
+        update=":mainForm:growl" />

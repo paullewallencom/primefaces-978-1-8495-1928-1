@@ -1,0 +1,6 @@
+<p:dataTable id="multipleSelection" var="car" 
+             value="#{dataTableBean.cars}" rowKey="#{car.name}"
+             selection="#{dataTableBean.selectedCars}"
+             selectionMode="multiple">
+   ...
+</p:dataTable>

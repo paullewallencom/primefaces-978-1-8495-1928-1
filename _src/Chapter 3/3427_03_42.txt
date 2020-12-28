@@ -1,0 +1,1 @@
+<p:spinner value="#{spinnerBean.intValue}" size="3" />

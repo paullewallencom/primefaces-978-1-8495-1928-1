@@ -1,0 +1,10 @@
+<p:panel id="panel" header="Blockable Panel"
+         style="height:90px;">
+    Click on Save to block me.
+
+    <p:commandButton id="saveBtn" value="Save"
+		 actionListener="#{blockUIBean.doSomething}"
+		 style="margin:10px;"/>
+</p:panel>
+
+<p:blockUI block="panel" trigger="saveBtn"/>

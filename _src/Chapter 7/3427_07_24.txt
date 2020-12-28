@@ -1,0 +1,7 @@
+<p:graphicImage value="#{dynaImageBean.graphicText}" />
+
+public StreamedContent getGraphicText() throws IOException {
+   InputStream stream =this.getClass()
+     .getResourceAsStream("/chapter7/primefaces.jpg");
+   return new DefaultStreamedContent(stream);
+}

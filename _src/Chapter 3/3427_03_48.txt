@@ -1,0 +1,4 @@
+<h:inputText id="minMaxSlider" value="#{sliderBean.intValue}"
+             onfocus="this.readOnly=true;" />
+<p:slider for="minMaxSlider" step="10"
+          minValue="0" maxValue="100" />

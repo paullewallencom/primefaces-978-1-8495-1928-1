@@ -1,0 +1,5 @@
+<p:outputPanel id="wrapper">
+   <p:dataTable id="table" rendered="#{tableBean.condition}">
+   ...
+   </p:dataTable>
+</p:outputPanel>

@@ -1,0 +1,9 @@
+<p:selectBooleanCheckbox
+     value="#{selectCheckboxBean.selectedValue}" />
+
+<p:selectManyCheckbox 
+     value="#{selectCheckboxBean.selectedCountries}">
+  <f:selectItem itemLabel="Turkey" itemValue="Turkey" />
+  <f:selectItem itemLabel="Germany" itemValue="Germany" />
+  <f:selectItem itemLabel="Switzerland" itemValue="Switzerland" />
+</p:selectManyCheckbox>

@@ -1,0 +1,4 @@
+<p:calendar value="#{calendarBean.date}" mode="inline">
+    <p:ajax event="dateSelect"
+      listener="#{calendarBean.onDateSelect}" update="growl" />
+</p:calendar>

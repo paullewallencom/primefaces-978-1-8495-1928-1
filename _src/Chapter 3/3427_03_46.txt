@@ -1,0 +1,4 @@
+<h:outputText id="output" value="#{sliderBean.intValue}" />
+<h:inputHidden id="displaySlider"
+               value="#{sliderBean.intValue}" />
+<p:slider for="displaySlider" display="output" />

@@ -1,0 +1,4 @@
+<p:dataScroller value="#{dataScrollerBean.cars}" 
+                var="car" chunkSize="10">
+   #{car.name}
+</p:dataScroller>

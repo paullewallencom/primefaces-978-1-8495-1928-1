@@ -1,0 +1,4 @@
+<p:ajax event="tabChange" listener="#{tabViewBean.onTabChange}"
+        update=":mainForm:growl" />
+<p:ajax event="tabClose" listener="#{tabViewBean.onTabClose}"
+        update=":mainForm:growl" />

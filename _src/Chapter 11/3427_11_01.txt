@@ -1,0 +1,19 @@
+<p:selectBooleanCheckbox id="checkbox"
+                    itemLabel="Update first output"
+                    value="#{requestContextBean.firstOutput}"/>
+
+<h:panelGrid columns="2" style="margin-top:10px;">
+    <h:outputText value="First Output"/>
+    <h:outputText id="firstOutput"
+                  value="#{requestContextBean.counter}"/>
+
+    <h:outputText value="Second Output"/>
+    <h:outputText id="secondOutput"
+                  value="#{requestContextBean.counter}"/>
+
+    <f:facet name="footer">
+      <p:commandButton value="Increment counter"
+        actionListener="#{requestContextBean.incrementWithUpdate}"
+        process="@form" style="margin:10px 0 10px 0;"/>
+    </f:facet>
+</h:panelGrid>

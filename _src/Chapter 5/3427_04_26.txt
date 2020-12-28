@@ -1,0 +1,6 @@
+<p:dataTable id="reorderingAJAX" var="car"
+             value="#{dataTableBean.cars}" draggableRows="true">
+   <p:ajax event="rowReorder" update=":mainForm:growl" 
+           listener="#{dataTableBean.onRowReorder}" />
+   ...
+</p:dataTable>

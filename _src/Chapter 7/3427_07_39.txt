@@ -1,0 +1,8 @@
+<p:photoCam widgetVar="pc" listener="#{photoCamBean.onCapture}"
+   update="capturedImage"/>
+
+<p:graphicImage id="capturedImage" 
+           value="#{photoCamBean.capturedImage}" cache="false"/>
+
+<p:commandButton type="button" value="Capture"
+                 onclick="PF(‘pc’).capture()"/>

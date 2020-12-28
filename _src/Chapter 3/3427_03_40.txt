@@ -1,0 +1,3 @@
+<p:spinner value="#{spinnerBean.intValue}" prefix="$" />
+
+<p:spinner value="#{spinnerBean.intValue}" suffix="%" />

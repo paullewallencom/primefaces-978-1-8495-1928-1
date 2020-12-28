@@ -1,0 +1,4 @@
+<context-param>
+      <param-name>primefaces.DIR</param-name>
+      <param-value>rtl</param-value>
+</context-param>

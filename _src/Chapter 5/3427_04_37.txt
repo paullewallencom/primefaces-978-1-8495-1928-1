@@ -1,0 +1,7 @@
+<p:dataList id="simple" value="#{dataListBean.countriesShort}"
+            var="country" itemType="disc">
+   <f:facet name="header">
+      Countries starting with 'A'
+   </f:facet>
+   <h:outputText value="#{country}" />
+</p:dataList>

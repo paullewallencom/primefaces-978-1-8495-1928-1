@@ -1,0 +1,21 @@
+<p:inputTextarea completeMethod="#{inputTextAreaBean.complete}"
+          queryDelay="500" minQueryLength="4" cols="40" />
+
+public List<String> complete(String query) {
+    List<String> results = new ArrayList<String>();
+
+    if(query.equals("PrimeFaces")) {
+        results.add("PrimeFaces Rocks!!!");
+        results.add("PrimeFaces has 100+ components.");
+        results.add("PrimeFaces is lightweight.");
+        results.add("PrimeFaces Cookbook
+                     is the best source for PrimeFaces!");
+    }
+    else {
+        for(int i = 0; i < 10; i++) {
+            results.add(query + i);
+        }
+    }
+
+    return results;
+}

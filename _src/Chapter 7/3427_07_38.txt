@@ -1,0 +1,7 @@
+<p:media value="#{mediaBean.media}" player="quicktime" />
+
+public StreamedContent getMedia() throws IOException {
+   InputStream stream = this.getClass()
+     .getResourceAsStream("/chapter7/sample_iTunes.mov");
+   return new DefaultStreamedContent(stream, "video/quicktime");
+}

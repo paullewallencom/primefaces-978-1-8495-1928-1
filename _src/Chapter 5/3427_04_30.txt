@@ -1,0 +1,4 @@
+public void onColumnToggle(ToggleEvent e) {
+   MessageUtil.addInfoMessage("col.toggled",
+                     "Visibility:" + e.getVisibility());
+}

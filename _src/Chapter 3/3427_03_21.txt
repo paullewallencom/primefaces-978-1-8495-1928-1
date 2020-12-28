@@ -1,0 +1,6 @@
+<p:selectBooleanCheckbox 
+   value="#{selectCheckboxBean.selectedValue}"
+   widgetVar="mySelection" />
+
+<p:commandLink value="Alert Selection" 
+               onclick="alert(mySelection.isChecked());" />

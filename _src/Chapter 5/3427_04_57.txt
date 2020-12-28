@@ -1,0 +1,15 @@
+rootWithType = new DefaultTreeNode("node", "Root", null);
+TreeNode node1_type = new DefaultTreeNode("node", "Node1",
+                                                rootWithType);
+TreeNode node2_type = new DefaultTreeNode("node", "Node2",
+                                                rootWithType);
+
+TreeNode node11_type = new DefaultTreeNode("leaf", "Node1.1",
+                                                   node1_type);
+TreeNode node12_type = new DefaultTreeNode("leaf", "Node1.2", 
+                                                   node1_type);
+
+TreeNode node21_type = new DefaultTreeNode("node", "Node2.1",
+                                                   node2_type);
+TreeNode node211_type = new DefaultTreeNode("leaf", "Node2.1.1",
+                                                   node21_type);

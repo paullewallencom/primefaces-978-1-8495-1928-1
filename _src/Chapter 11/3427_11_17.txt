@@ -1,0 +1,28 @@
+<p:dataTable id="dataTable" var="message"
+             value="#{blockUIBean.messages}"
+             paginator="true" rows="5" ...>
+    <p:ajax event="page" listener="#{blockUIBean.doSomething}"/>
+    <p:ajax event="sort" listener="#{blockUIBean.doSomething}"/>
+    <p:column sortBy="#{message.subject}">
+        <f:facet name="header">
+            <h:outputText value="Subject"/>
+        </f:facet>
+        <h:outputText value="#{message.subject}"/>
+    </p:column>
+    <p:column sortBy="#{message.text}">
+        <f:facet name="header">
+            <h:outputText value="Text"/>
+        </f:facet>
+        <h:outputText value="#{message.text}"/>
+    </p:column>
+</p:dataTable>
+
+<p:blockUI block="dataTable" trigger="dataTable">
+    <h:panelGrid id="blockContent" columns="2"
+                 style="table-layout:auto;">
+        <h:graphicImage library="images" name="ajax-loader.gif"
+            style="margin-right:12px; vertical-align:middle;"/>
+        <h:outputText value="Please wait, data is being processed..."
+            style="white-space:nowrap;"/>
+    </h:panelGrid>
+</p:blockUI>

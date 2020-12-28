@@ -1,0 +1,22 @@
+@Named
+@SessionScoped
+public class ThemeConverter implements Serializable, Converter {
+    
+    @Inject
+    private UserSettingsBean userSettingsBean;
+
+	public Object getAsObject(FacesContext context, UIComponent component, String value) {
+        List<Theme> themes = userSettingsBean.getAvailableThemes();
+        for (Theme theme : themes) {
+            if (theme.getName().equals(value)) {
+                return theme;
+            }
+        }
+        
+        return null;
+	}
+
+	public String getAsString(FacesContext context, UIComponent component, Object value) {
+		return ((Theme) value).getName();
+	}
+}

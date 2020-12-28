@@ -1,0 +1,6 @@
+<p:dataTable id="multipleSelectionCheckbox" var="car"
+   value="#{dataTableBean.cars}" rowKey="#{car.name}"
+   selection="#{dataTableBean.selectedCars}">
+      <p:column selectionMode="multiple" />
+...
+</p:dataTable>

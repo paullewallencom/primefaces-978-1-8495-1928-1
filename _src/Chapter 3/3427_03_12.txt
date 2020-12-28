@@ -1,0 +1,4 @@
+<p:autoComplete id="multipleSelect"
+    value="#{autoCompleteBean.selectedTexts}"
+    completeMethod="#{autoCompleteBean.complete}"
+    multiple="true" />

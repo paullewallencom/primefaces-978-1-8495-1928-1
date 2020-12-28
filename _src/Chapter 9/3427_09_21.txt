@@ -1,0 +1,4 @@
+private MapModel rectangleModel = new DefaultMapModel();
+private MapModel circleModel = new DefaultMapModel();
+private MapModel polylineModel = new DefaultMapModel();
+private MapModel polygonModel = new DefaultMapModel();

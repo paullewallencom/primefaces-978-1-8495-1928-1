@@ -1,0 +1,2 @@
+<p:calendar value="#{calendarBean.date}" pages="3" 
+                                         mode="inline" />

@@ -1,0 +1,6 @@
+<p:rating id="instantRating" value="#{ratingBean.rate}">
+   <p:ajax event="rate" listener="#{ratingBean.handleRate}"
+           update="growl" />
+   <p:ajax event="cancel" listener="#{ratingBean.cancelRate}"
+           update="growl" />
+</p:rating>

@@ -1,0 +1,10 @@
+<h:outputLabel for="name" value="Name:" 
+                   style="font-weight:bold" />
+<p:inputText id="name" />
+<p:commandButton value="Partial Submit (False)" 
+                   partialSubmit="false" process="name" />
+<p:commandButton value="Partial Submit (True)" 
+                   partialSubmit="true" process="name" />
+<p:inputText /> <p:inputText /> <p:inputText /><br\>
+<p:inputText /> <p:inputText /> <p:inputText /><br\>
+<p:inputText /> <p:inputText /> <p:inputText /><br\>

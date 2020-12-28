@@ -1,0 +1,10 @@
+<p:gmap id="withInformation" center="41.106261, 29.057465"
+        zoom="10" type="roadmap" style="width:600px;height:400px"
+        model="#{mapBean.markerModel}">
+  <p:ajax event="overlaySelect" 
+          listener="#{mapBean.selectMarker}" />
+    <p:gmapInfoWindow id="infoWindow">
+       <p:graphicImage 
+  value="/resources/images/map/#{mapBean.selectedMarker.data}" />
+    </p:gmapInfoWindow>
+</p:gmap>

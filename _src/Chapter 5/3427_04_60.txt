@@ -1,0 +1,6 @@
+<p:tree id="dnd" value="#{treeDataBean.root}" var="node"
+        draggable="true" droppable="true">
+    <p:treeNode>
+        <h:outputText value="#{node}" />
+    </p:treeNode>
+</p:tree>

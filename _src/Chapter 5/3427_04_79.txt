@@ -1,0 +1,24 @@
+public void onDateSelect(SelectEvent event) {
+   MessageUtil.addInfoMessage("date.selected", event.getObject());
+}
+
+public void onEventSelect(SelectEvent event) {
+   MessageUtil.addInfoMessage("event.selected",
+            ((DefaultScheduleEvent)event.getObject()).getTitle());
+}
+
+public void onEventMove(ScheduleEntryMoveEvent event) {
+   MessageUtil.addInfoMessage("event.moved", 
+      event.getScheduleEvent().getTitle(), event.getDayDelta(),
+      event.getMinuteDelta());
+}
+
+public void onEventResize(ScheduleEntryResizeEvent event) {
+   MessageUtil.addInfoMessage("event.resized",
+     event.getScheduleEvent().getTitle(), event.getDayDelta(),
+     event. getMinuteDelta());
+}
+
+public void onViewChange(SelectEvent event) {
+   MessageUtil.addInfoMessage("view.changed", event.getObject());
+}

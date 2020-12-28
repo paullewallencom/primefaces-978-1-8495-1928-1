@@ -1,0 +1,12 @@
+<p:cache region="appCache" key="jsfcentral">
+    <p:feedReader value="http://www.jsfcentral.com/resources/
+                         jsfcentralpodcasts/?feed=rss"
+                  var="feed" size="10">
+        <h:outputText value="#{feed.title}"
+                      style="font-weight: bold"/>
+        <br/>
+        <h:outputText value="#{feed.description.value}"
+                      escape="false"/>
+        <p:separator/>
+    </p:feedReader>
+</p:cache>

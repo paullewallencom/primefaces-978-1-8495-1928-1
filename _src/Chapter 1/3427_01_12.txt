@@ -1,0 +1,4 @@
+<context-param>
+       <param-name>primefaces.SUBMIT</param-name>
+       <param-value>partial</param-value>
+</context-param>

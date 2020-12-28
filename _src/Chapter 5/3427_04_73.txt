@@ -1,0 +1,10 @@
+<p:dataExporter type="pdf" target="countriesTable"
+                fileName="countries"
+                preProcessor="#{dataExportBean.preProcessPDF}" />
+
+public void preProcessPDF(Object document) {
+   Document pdf = (Document) document;
+   HeaderFooter footer = 
+          new HeaderFooter(new Phrase("This is page:"), true);
+   pdf.setFooter(footer);
+}

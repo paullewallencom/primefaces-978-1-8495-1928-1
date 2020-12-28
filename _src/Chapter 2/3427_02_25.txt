@@ -1,0 +1,4 @@
+<p:themeSwitcher value="#{userSettingsBean.theme}">
+    <f:selectItems value="#{userSettingsBean.themes}"/>
+    <p:ajax listener="#{userSettingsBean.saveTheme}"/>
+</p:themeSwitcher>

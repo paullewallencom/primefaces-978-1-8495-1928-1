@@ -1,0 +1,3 @@
+public void handleSave(AjaxBehaviorEvent event) {
+   MessageUtil.addInfoMessageWithoutKey("Input Saved!", null);
+}

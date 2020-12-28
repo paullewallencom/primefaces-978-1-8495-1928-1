@@ -1,0 +1,26 @@
+<p:tree id="withContextMenu" var="node" selectionMode="single"
+        value="#{treeDataBean.rootWithType}"
+        selection="#{treeDataBean.selectedNode}">
+   <p:treeNode type="node">
+      <h:outputText value="#{node}" />
+   </p:treeNode>
+
+   <p:treeNode type="leaf">
+      <h:outputText value="#{node}" />
+   </p:treeNode>
+</p:tree>
+
+<p:contextMenu for="withContextMenu" nodeType="node">
+   <p:menuitem value="View" update="dialogPanel"
+               icon="ui-icon-search"
+               oncomplete="PF('nodeDialog').show()" />
+</p:contextMenu>
+
+<p:contextMenu for="withContextMenu" nodeType="leaf">
+   <p:menuitem value="View" update="dialogPanel"
+               icon="ui-icon-search"
+               oncomplete="PF('nodeDialog').show()" />
+   <p:menuitem value="Delete"
+               actionListener="#{treeDataBean.deleteNode}"
+               update="withContextMenu" icon="ui-icon-close" />
+</p:contextMenu>

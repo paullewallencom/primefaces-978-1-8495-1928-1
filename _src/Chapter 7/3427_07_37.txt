@@ -1,0 +1,6 @@
+<p:media value="/resources/media/sample_iTunes.mov" 
+         player="quicktime" width="700" height="500">
+    <f:param name="autoPlay" value="false" />
+    <f:param name="controller" value="true" />
+    <f:param name="volume" value="20" />
+</p:media>

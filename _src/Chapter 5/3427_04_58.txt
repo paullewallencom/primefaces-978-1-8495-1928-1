@@ -1,0 +1,4 @@
+<p:treeNode type="node" expandedIcon="ui-icon-minusthick" 
+                        collapsedIcon="ui-icon-plusthick">
+   <h:outputText value="#{node}" />
+</p:treeNode>

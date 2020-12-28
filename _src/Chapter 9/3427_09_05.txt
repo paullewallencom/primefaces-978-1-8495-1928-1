@@ -1,0 +1,2 @@
+sales.setFill(true);
+expenses.setFill(true);

@@ -1,0 +1,4 @@
+public void onResize(ColumnResizeEvent event) {
+   MessageUtil.addInfoMessage("column.resized",
+        "W:" + event.getWidth() + " - H:" + event.getHeight());
+}

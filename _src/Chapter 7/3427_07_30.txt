@@ -1,0 +1,6 @@
+<p:imageSwitch id="withData">
+   <ui:repeat value="#{imageSwitchBean.cars}" var="car">
+      <p:graphicImage 
+         value="/resources/images/autocomplete/#{car.name}.png" />
+   </ui:repeat>
+</p:imageSwitch>

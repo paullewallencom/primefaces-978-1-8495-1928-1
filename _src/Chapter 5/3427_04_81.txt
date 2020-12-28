@@ -1,0 +1,13 @@
+<p:dataScroller value="#{dataScrollerBean.cars}" var="car"
+                chunkSize="3">
+   <p:column>
+      <p:graphicImage width="400" height="250"
+         value="/resources/images/autocomplete/#{car.name}.png" />
+   </p:column>
+   <p:column>
+      <h:outputText value="#{car.name}" style="font-size: 80px" />
+   </p:column>
+   <f:facet name="loader">
+      <p:commandButton type="button" value="View More" />
+   </f:facet>
+</p:dataScroller>

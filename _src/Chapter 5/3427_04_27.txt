@@ -1,0 +1,4 @@
+public void onRowReorder(ReorderEvent event) {
+   MessageUtil.addInfoMessage("row.reordered", "From:" +
+        event.getFromIndex() + " - To:" + event.getToIndex());
+}

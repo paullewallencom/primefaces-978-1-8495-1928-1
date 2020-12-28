@@ -1,0 +1,2 @@
+<p:growl id="growl" />
+<p:commandButton action="#{localizationBean.addMessage}" value="Display Message" update="growl" />

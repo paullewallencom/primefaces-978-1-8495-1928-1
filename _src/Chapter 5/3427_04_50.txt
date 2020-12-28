@@ -1,0 +1,6 @@
+public void handleTransfer(TransferEvent event) {
+   MessageUtil.addInfoMessage("items.transferred",
+      event.getItems());
+   MessageUtil.addInfoMessage("is.added", event.isAdd());
+   MessageUtil.addInfoMessage("is.removed", event.isRemove());
+}

@@ -1,0 +1,4 @@
+<p:dataScroller value="#{dataScrollerBean.lazyCarModel}" 
+                var="car" chunkSize="10" lazy="true">
+   #{car.name}
+</p:dataScroller>

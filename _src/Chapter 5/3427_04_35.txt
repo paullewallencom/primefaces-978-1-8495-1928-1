@@ -1,0 +1,10 @@
+public class Boxer {
+    private String name;
+    private List<Stat> stats = new ArrayList<Stat>();
+}
+
+public class Stat {
+    private String match;
+    private int win;
+    private int loss;
+}

@@ -1,0 +1,3 @@
+<h:outputScript library="js" name="chapter10/lang_en.js"/>
+<h:outputScript library="js" name="chapter10/xregexp-all.js"/>
+<h:outputScript library="js" name="chapter10/validators.js"/>

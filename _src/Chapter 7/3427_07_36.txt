@@ -1,0 +1,2 @@
+<p:media value="http://www.youtube.com/v/5aTFiNxzXF4"
+         player="flash"/>

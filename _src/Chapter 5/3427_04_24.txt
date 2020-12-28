@@ -1,0 +1,5 @@
+<p:dataTable id="resizingAJAX" var="car"
+            value="#{dataTableBean.cars}" resizableColumns="true">
+   <p:ajax event="colResize" listener="#{dataTableBean.onResize}"
+           update=":mainForm:growl" />
+</p:dataTable>

@@ -1,0 +1,18 @@
+@Named
+@SessionScoped
+public class UserSettingsBean implements Serializable {
+
+    private Map<String, String> themes;
+
+    public Map<String, String> getThemes() {
+        return themes;
+    }
+
+    @PostConstruct
+    public void init() {
+        themes = new TreeMap<String, String>();
+        themes.put("Afterdark", "afterdark");
+        ...
+        themes.put("Vader", "vader");
+    }
+}

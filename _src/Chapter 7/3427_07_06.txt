@@ -1,0 +1,3 @@
+<p:fileUpload value="#{fileBean.file}"
+      fileUploadListener="#{fileBean.handleFileUpload}"
+      update="growl" />

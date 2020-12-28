@@ -1,0 +1,4 @@
+public void onNodeExpand(NodeExpandEvent event) {
+   MessageUtil.addInfoMessageWithoutKey("Expanded",
+                 event.getTreeNode().getData().toString());
+}

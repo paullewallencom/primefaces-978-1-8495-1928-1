@@ -1,0 +1,5 @@
+<p:spinner value="#{spinnerBean.intValue}" suffix="%"
+           min="0"max="100">
+    <f:passThroughAttribute name="onkeydown"
+                           value="return false;" />
+</p:spinner>

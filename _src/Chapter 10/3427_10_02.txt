@@ -1,0 +1,15 @@
+@Named
+@ViewScoped
+public class BasicCsvBean implements Serializable {
+
+    private String string1;
+    private String string2;
+    private String string3;
+    private Integer int1;
+    private Double double1;
+    private Double double2;
+    private Date date1;
+
+    // getters / setters
+	...
+}

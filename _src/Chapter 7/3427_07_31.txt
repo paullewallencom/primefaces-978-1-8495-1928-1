@@ -1,0 +1,11 @@
+<p:contentFlow id="simple">
+   <p:graphicImage value="/resources/images/autocomplete/CC.png"
+                   styleClass="content" />
+   <p:graphicImage value="/resources/images/autocomplete/Golf.png"
+                   styleClass="content" />
+   <p:graphicImage value="/resources/images/autocomplete/Polo.png"
+                   styleClass="content" />
+   <p:graphicImage
+      value="/resources/images/autocomplete/Touareg.png"
+      styleClass="content" />
+</p:contentFlow>

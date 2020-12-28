@@ -1,0 +1,10 @@
+@Named
+@ViewScoped
+public class InstantCsvBean implements Serializable {
+
+    private String value1;
+    private Integer value2;
+    private Date value3;
+
+    // getters / setters
+}

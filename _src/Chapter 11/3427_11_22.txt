@@ -1,0 +1,13 @@
+<p:layoutUnit position="center">
+    <p:dialog header="Dialog in layout" modal="true"
+              widgetVar="dlgWidget" appendTo="@(body)">
+        <h:form>
+            <h:inputText/>
+            <p:commandButton value="Save"
+                             style="margin:10px;"/>
+        </h:form>
+    </p:dialog>
+
+    <p:commandButton value="Show dialog" type="button"
+            onclick="PF('dlgWidget').show()"/>
+</p:layoutUnit>

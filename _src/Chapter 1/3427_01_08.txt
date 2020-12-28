@@ -1,0 +1,15 @@
+<h:outputText value="Country: " />
+<h:selectOneMenu id="countries" value="#{partialProcessingBean.country}">
+<f:selectItems value="#{partialProcessingBean.countries}" />
+  <p:ajax listener=
+  "#{partialProcessingBean.handleCountryChange}"
+    event="change" update="cities" process="@this"/>
+</h:selectOneMenu>
+
+<h:outputText value="City: " />
+<h:selectOneMenu id="cities" value="#{partialProcessingBean.city}">
+  <f:selectItems value="#{partialProcessingBean.cities}" />
+</h:selectOneMenu>
+
+<h:outputText value="Email: " />
+<h:inputText value="#{partialProcessingBean.email}" required="true" />

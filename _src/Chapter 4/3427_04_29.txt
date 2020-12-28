@@ -1,0 +1,4 @@
+<p:layout id="elementLayout" style="min-width:600px;min-
+   height:400px;">
+   ...
+</p:layout>

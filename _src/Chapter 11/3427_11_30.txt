@@ -1,0 +1,3 @@
+<p:dataTable stickyHeader="true" ...>
+    ...
+</p:dataTable>

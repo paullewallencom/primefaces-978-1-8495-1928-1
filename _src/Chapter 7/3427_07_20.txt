@@ -1,0 +1,2 @@
+<p:imageCropper value="#{imageCropBean.croppedImageSimple}"
+   image="/resources/images/crop/primefaces.jpg" />

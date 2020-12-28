@@ -1,0 +1,4 @@
+<p:panel id="newWidget" style="width: 200px">
+   <h:outputText value="Drag me and create a new widget" />
+</p:panel>
+<p:draggable for="newWidget" helper="clone" dashboard="board" />

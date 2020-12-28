@@ -1,0 +1,13 @@
+public void postSort(ComponentSystemEvent e) {
+   System.out.println(((DataTable)
+           e.getComponent()).getSortColumn().getHeaderText());
+}
+
+public void postFilter(ComponentSystemEvent e) {
+   DataTable dt = (DataTable) e.getComponent();
+   for (Iterator it = 
+         dt.getFilteredValue().iterator(); it.hasNext();) {
+      Car car = (Car) it.next();
+      System.out.println(car.getName());
+   }
+}

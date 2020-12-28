@@ -1,0 +1,16 @@
+<p:themeSwitcher value="#{userSettingsBean.theme}" var="t"
+                 style="width:170px" effect="fade"
+                 converter="#{themeConverter}"
+                 onchange="$('#mainForm').submit()">
+    <f:selectItems value="#{userSettingsBean.availableThemes}"
+                   var="theme"
+                   itemLabel="#{theme.displayName}"
+                   itemValue="#{theme}"/>
+    <p:column>
+        <h:graphicImage library="images"
+                        name="themes/#{t.name}.png"/>
+    </p:column>
+    <p:column>
+        #{t.displayName}
+    </p:column>
+</p:themeSwitcher>

@@ -1,0 +1,7 @@
+<script type="text/javascript">
+   function chart() {
+      this.cfg.axes.xaxis.tickOptions = {
+         formatString : '%d'
+      };
+   }
+</script>

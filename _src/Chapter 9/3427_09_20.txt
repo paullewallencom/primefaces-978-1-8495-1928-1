@@ -1,0 +1,9 @@
+<p:gmap ...>
+   <p:ajax event="markerDrag"
+           listener="#{mapBean.onMarkerDrag}" update="growl" />
+</p:gmap>
+
+public void onMarkerDrag(MarkerDragEvent event) {
+   MessageUtil.addInfoMessage("marker.dragged",
+                     event.getMarker().getLatlng().toString());
+}

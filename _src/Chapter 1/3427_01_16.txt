@@ -1,0 +1,2 @@
+<p:ajax event="page" partialSubmit="true"
+                     partialSubmitFilter=":not(:input)" />

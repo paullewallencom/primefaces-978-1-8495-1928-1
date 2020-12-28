@@ -1,0 +1,39 @@
+<p:dataTable value="#{dataTableBean.boxers}" var="boxer">
+   <f:facet name="header">
+      Boxers
+   </f:facet>
+
+   <p:columnGroup type="header">
+      <p:row>
+         <p:column rowspan="2" headerText="Boxer" />
+         <p:column colspan="2" headerText="Stats" />
+      </p:row>
+      <p:row>
+         <p:column headerText="Wins" />
+         <p:column headerText="Losses" />
+      </p:row>
+   </p:columnGroup>
+
+   <p:subTable var="stats" value="#{boxer.stats}">
+      <f:facet name="header">
+         <h:outputText value="#{boxer.name}" />
+      </f:facet>
+      <p:column>
+         <h:outputText value="#{stats.match}" />
+      </p:column>
+      <p:column>
+         <h:outputText value="#{stats.win}" />
+      </p:column>
+      <p:column>
+         <h:outputText value="#{stats.loss}" />
+      </p:column>
+      <p:columnGroup type="footer">
+         <p:row>
+            <p:column footerText="Totals: " 
+                      style="text-align:right"/>
+            <p:column footerText="#{boxer.allWins}" />
+            <p:column footerText="#{boxer.allLosses}" />
+         </p:row>
+      </p:columnGroup>
+   </p:subTable>
+</p:dataTable>

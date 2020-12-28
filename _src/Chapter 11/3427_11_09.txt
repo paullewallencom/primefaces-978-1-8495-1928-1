@@ -1,0 +1,7 @@
+function handleComplete(xhr, status, args) {
+    if (args && args.validName) {
+        PF('dlgWidget').hide();
+    } else {
+        $('#name').addClass('ui-state-error');
+    }
+}

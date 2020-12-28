@@ -1,0 +1,10 @@
+function customFilter(itemLabel, filterValue) {
+    var reg = new RegExp(filterValue.split('').join('\\w*'), 'i');
+    if (itemLabel.match(reg)) {
+        // return true to accept
+        return true;
+    }
+
+    // return false to reject
+    return false;
+}

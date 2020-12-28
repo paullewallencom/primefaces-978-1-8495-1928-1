@@ -1,0 +1,4 @@
+<p:selectBooleanButton
+     value="#{localizationBean.selectedValue}"
+     onLabel="#{msg['booleanButton.onLabel']}"
+     offLabel="#{msg['booleanButton.offLabel']}" />

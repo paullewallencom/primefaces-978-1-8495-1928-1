@@ -1,0 +1,40 @@
+@Named(value = "bvBean")
+@ViewScoped
+public class BVBean implements Serializable {
+
+    @AssertFalse
+    private boolean supported;
+
+    @AssertTrue
+    private boolean active;
+
+    @DecimalMin("5.00") @DecimalMax("30.00")
+    private BigDecimal discount;
+
+    @Digits(integer = 6, fraction = 2)
+    private Double price;
+
+    @Future
+    private Date eventDate;
+
+    @Past
+    private Date birthday;
+
+    @Min(5) @Max(10)
+    private int quantity;
+
+    @NotNull
+    private String username;
+
+    @Null
+    private String unusedString;
+
+    @Pattern(regexp = "\\(\\d{3}\\)\\d{3}-\\d{4}")
+    private String phoneNumber;
+
+    @Size(min = 2, max = 50)
+    private String briefMessage;
+
+    // getters / setters
+	...
+}

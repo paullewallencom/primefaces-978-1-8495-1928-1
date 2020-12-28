@@ -1,0 +1,6 @@
+public String info() {
+    FacesContext.getCurrentInstance().getExternalContext().
+            getFlash().put("helpVisible", true);
+
+    return "/views/chapter6/menubar.xhtml";
+}

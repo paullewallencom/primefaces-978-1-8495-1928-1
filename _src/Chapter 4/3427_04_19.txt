@@ -1,0 +1,5 @@
+<p:outputPanel layout=”block”>
+   <h3>The Volkswagen CC (also known as the
+       Volkswagen Passat CC)</h3>
+   <p>is a four-door coupe version of the Volkswagen Passat.</p>
+</p:outputPanel>

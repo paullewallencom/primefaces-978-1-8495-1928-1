@@ -1,0 +1,2 @@
+<p:autoComplete id="simple" value="#{autoCompleteBean.txt1}"
+    completeMethod="#{autoCompleteBean.complete}" />

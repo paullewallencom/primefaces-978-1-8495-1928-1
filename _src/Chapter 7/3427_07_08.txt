@@ -1,0 +1,2 @@
+<p:fileUpload fileUploadListener="#{fileBean.handleFileUpload}"
+              allowTypes="/(\.|\/)(gif|jpe?g|png)$/" />

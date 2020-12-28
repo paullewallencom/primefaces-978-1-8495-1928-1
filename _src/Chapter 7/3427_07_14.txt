@@ -1,0 +1,18 @@
+public class FileBean implements Serializable {
+   private StreamedContent file;
+
+   public FileBean() {
+      InputStream stream = this.getClass().
+         getResourceAsStream("/chapter7/PFSamplePDF.pdf");
+      file = new DefaultStreamedContent(stream,
+         "application/pdf", "PFSample.pdf");
+   }
+
+   public StreamedContent getFile() {
+      return file;
+   } 
+
+   public StreamedContent getDownloadFile() {
+      return downloadFile;
+   }
+}

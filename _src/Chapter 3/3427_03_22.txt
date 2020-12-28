@@ -1,0 +1,5 @@
+<p:selectBooleanCheckbox
+    value="#{selectCheckboxBean.selectedValue}">
+    <p:ajax update="growl"
+            listener="#{selectCheckboxBean.addMessage}" />
+</p:selectBooleanCheckbox>

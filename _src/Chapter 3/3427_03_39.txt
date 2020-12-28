@@ -1,0 +1,1 @@
+<p:spinner value="#{spinnerBean.doubleValue}" stepFactor="0.5" />

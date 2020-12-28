@@ -1,0 +1,1 @@
+<p:menu model="#{parametrizedCommandBean.model}" style="width:200px"/>

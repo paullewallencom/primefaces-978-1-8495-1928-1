@@ -1,0 +1,3 @@
+<p:poll interval="2" update="live" />
+<p:chart id="live" type="pie" model="#{chartBean.livePieModel}"
+         style="height:250px" />

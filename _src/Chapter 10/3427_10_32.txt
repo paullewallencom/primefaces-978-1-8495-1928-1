@@ -1,0 +1,2 @@
+<input type="text" data-forcardmenu="@(.card)"
+       data-p-con="javax.faces.Integer" data-p-required="true"...>

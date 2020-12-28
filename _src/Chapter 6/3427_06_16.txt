@@ -1,0 +1,75 @@
+<p:megaMenu>
+    <p:submenu label="Women's Clothing" icon="ui-icon-person">
+        <p:column>
+            <p:submenu label="Shoes">
+                <p:menuitem value="Size UK 3-5" url="#"/>
+                ...
+            </p:submenu>
+            <p:submenu label="Jeans">
+                <p:menuitem value="Curve" url="#"/>
+                ...
+            </p:submenu>
+            <p:submenu label="Nightwear">
+                <p:menuitem value="Calvin Klein" url="#"/>
+                ...
+            </p:submenu>
+        </p:column>
+        <p:column>
+            <p:submenu label="Leggings">
+                <p:menuitem value="Long Sleeve" url="#"/>
+                ...
+            </p:submenu>
+            <p:submenu label="Skirts">
+                <p:menuitem value="American Apparel" url="#"/>
+                ...
+            </p:submenu>
+        </p:column>
+    </p:submenu>
+
+    <p:submenu label="Men's Clothing" icon="ui-icon-person">
+        <p:column>
+            <p:submenu label="Shoes">
+                <p:menuitem value="Size UK 3-5" url="#"/>
+                ...
+            </p:submenu>
+            <p:submenu label="T-Shirts">
+                <p:menuitem value="Addict" url="#"/>
+                ...
+            </p:submenu>
+        </p:column>
+        <p:column>
+            <p:submenu label="Leather Jackets">
+                <p:menuitem value="Diesel" url="#"/>
+                ...
+            </p:submenu>
+            <p:submenu label="Jeans">
+                <p:menuitem value="Curve" url="#"/>
+                ...
+            </p:submenu>
+            <p:submenu label="Swimwear">
+                <p:menuitem value="Boss Black" url="#"/>
+                ...
+            </p:submenu>
+        </p:column>
+    </p:submenu>
+
+    <p:submenu label="Color Guide" icon="ui-icon-image">
+        <p:column>
+            <h:graphicImage library="images" name="colors.gif"/>
+        </p:column>
+    </p:submenu>
+
+    <p:menuitem value="Shopping Cart"
+                onclick="PF('wdgtShoppingCart').show();"
+                update="shoppingCartGrp" icon="ui-icon-cart"/>
+</p:megaMenu>
+
+<p:dialog id="shoppingCart" header="Shopping Cart"
+          widgetVar="wdgtShoppingCart">
+    <h:panelGroup id="shoppingCartGrp" layout="block"
+                  style="padding:20px;">
+        <h:outputText value="#{megaMenuBean.items}"/>
+    </h:panelGroup>
+    <p:commandButton value="Close" type="button"
+                     onclick="PF('wdgtShoppingCart').hide();"/>
+</p:dialog>

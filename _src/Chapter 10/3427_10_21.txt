@@ -1,0 +1,19 @@
+<h:panelGrid columns="3" cellpadding="3"
+             style="margin-bottom:10px;">
+    <p:outputLabel for="firstName" value="First Name"/>
+    <p:inputText id="firstName"
+                 value="#{extendCsvBean.firstName}">
+        <book:validateUnicode msgparam="firstName"/>
+    </p:inputText>
+    <p:message for="firstName"/>
+
+    <p:outputLabel for="lastName" value="Last Name"/>
+    <p:inputText id="lastName"
+                 value="#{extendCsvBean.lastName}">
+        <book:validateUnicode msgparam="lastName"/>
+    </p:inputText>
+    <p:message for="lastName"/>
+</h:panelGrid>
+
+<p:commandButton validateClient="true"
+                 value="Submit" ajax="false"/>

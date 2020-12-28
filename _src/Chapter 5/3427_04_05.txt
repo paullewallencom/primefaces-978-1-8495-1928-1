@@ -1,0 +1,6 @@
+<p:dataTable id="withRadioButton" var="car"
+             value="#{dataTableBean.cars}" rowKey="#{car.name}"
+             selection="#{dataTableBean.selectedCar}">
+   <p:column selectionMode="single"/>
+   ...
+</p:dataTable>

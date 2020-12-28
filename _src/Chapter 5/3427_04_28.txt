@@ -1,0 +1,15 @@
+<p:dataTable id="colToggle" var="car"
+             value="#{dataTableBean.cars}">
+   <f:facet name="header">
+      <p:commandButton id="toggler" type="button" 
+                       value="Columns" />
+      <p:columnToggler datasource="colToggle" 
+                       trigger="toggler" />
+   </f:facet>
+   <p:column headerText="Year">
+      <h:outputText value="#{car.year}" />
+   </p:column>
+   <p:column headerText="Name">
+      <h:outputText value="#{car.name}" />
+   </p:column>
+</p:dataTable>

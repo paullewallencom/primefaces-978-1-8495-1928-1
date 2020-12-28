@@ -1,0 +1,3 @@
+<p:selectBooleanCheckbox 
+   value="#{selectCheckboxBean.selectedValue}"
+   itemLabel="#{msg['selectBooleanCheckbox.label']}" />

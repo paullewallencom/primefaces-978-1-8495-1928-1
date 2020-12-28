@@ -1,0 +1,17 @@
+<p:commandButton type="button"
+       onclick="PF('manualSwitch').previous();"
+       icon="ui-icon-circle-triangle-w" id="prev" />
+<p:commandButton type="button"
+       onclick="PF('manualSwitch').next();"
+       icon="ui-icon-circle-triangle-e" id="next" />
+<p:imageSwitch id="manual" widgetVar="manualSwitch" 
+               slideshowAuto="false">
+   <p:graphicImage
+       value="/resources/images/autocomplete/CC.png" />
+   <p:graphicImage
+       value="/resources/images/autocomplete/Golf.png" />
+   <p:graphicImage
+       value="/resources/images/autocomplete/Polo.png" />
+   <p:graphicImage
+       value="/resources/images/autocomplete/Touareg.png" />
+</p:imageSwitch>

@@ -1,0 +1,6 @@
+<p:pickList id="withAJAX" value="#{pickListBean.countries}"
+            var="country"
+            itemLabel="#{country}" itemValue="#{country}">
+   <p:ajax event="transfer" update="growl"
+           listener="#{pickListBean.handleTransfer}" />
+</p:pickList>

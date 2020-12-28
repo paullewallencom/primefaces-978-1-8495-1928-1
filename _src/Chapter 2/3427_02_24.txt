@@ -1,0 +1,13 @@
+public class Theme implements Serializable {
+
+	private String displayName;
+	private String name;
+
+	public Theme(String displayName, String name) {
+		this.displayName = displayName;
+		this.name = name;
+	}
+
+	// getters
+	...
+}

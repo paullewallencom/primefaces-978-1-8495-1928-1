@@ -1,0 +1,9 @@
+<p:dataTable id="resizing" var="car" value="#{dataTableBean.cars}"
+             resizableColumns="true">
+   <p:column headerText="Year">
+      <h:outputText value="#{car.year}" />
+   </p:column>
+   <p:column headerText="Name">
+      <h:outputText value="#{car.name}" />
+   </p:column>
+</p:dataTable>

@@ -1,0 +1,8 @@
+<h:panelGroup id="msg2">
+    <p:messages severity="error" showDetail="true"/>
+    <p:growl severity="info, warn" showDetail="true"/>
+    <p:growl showDetail="true"/>
+</h:panelGroup>
+
+<p:commandButton value="Generate error message" update="msg2"
+    action="#{targetableMessagesBean.addErrorMessage}"/>

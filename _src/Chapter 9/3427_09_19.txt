@@ -1,0 +1,10 @@
+<p:gmap ...>
+   <p:ajax event="overlaySelect"
+           listener="#{mapBean.onMarkerSelect}" update="growl" />
+</p:gmap>
+
+public void onMarkerSelect(OverlaySelectEvent event) {
+   Marker selectedMarker = (Marker) event.getOverlay();
+   MessageUtil.addInfoMessageWithoutKey(selectedMarker.getTitle(),
+                           selectedMarker.getLatlng().toString());
+}

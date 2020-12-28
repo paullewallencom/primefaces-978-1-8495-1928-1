@@ -1,0 +1,24 @@
+<error-page>
+    <exception-type>
+        java.lang.Throwable
+    </exception-type>
+    <location>
+        /views/chapter11/errors/throwable.jsf
+    </location>
+</error-page>
+<error-page>
+    <exception-type>
+        java.lang.IllegalStateException
+    </exception-type>
+    <location>
+        /views/chapter11/errors/illegalState.jsf
+    </location>
+</error-page>
+<error-page>
+    <exception-type>
+        javax.faces.application.ViewExpiredException
+    </exception-type>
+    <location>
+        /views/chapter11/errors/viewExpired.jsf
+    </location>
+</error-page>

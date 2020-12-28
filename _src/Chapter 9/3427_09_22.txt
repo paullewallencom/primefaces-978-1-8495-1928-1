@@ -1,0 +1,3 @@
+rectangleModel.addOverlay(new Rectangle(new LatLngBounds(
+        new LatLng(41.073399, 29.051971),
+        new LatLng(41.118418, 29.134026))));

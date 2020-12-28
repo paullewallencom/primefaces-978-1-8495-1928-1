@@ -1,0 +1,3 @@
+<p:commandButton value="Download" ajax="false">
+   <p:fileDownload value="#{fileBean.file}" />
+</p:commandButton>

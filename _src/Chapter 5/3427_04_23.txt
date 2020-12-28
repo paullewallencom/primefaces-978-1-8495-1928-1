@@ -1,0 +1,28 @@
+<p:dataTable id="rowToggle" var="car"
+             value="#{dataTableBean.cars}">
+   <p:column style="width: 20px">
+      <p:rowToggler />
+   </p:column>
+   <p:column headerText="Year">
+      <h:outputText value="#{car.year}" />
+   </p:column>
+   <p:column headerText="Name">
+      <h:outputText value="#{car.name}" />
+   </p:column>
+
+   <p:rowExpansion>
+      <h:panelGrid id="display" columns="2" cellpadding="4">
+         <f:facet name="header">
+            <p:graphicImage
+        value="/resources/images/autocomplete/#{car.name}.png"
+        width="60" height="40" />
+         </f:facet>
+
+         <h:outputText value="Name:" />
+         <h:outputText value="#{car.name}" />
+
+         <h:outputText value="Year:" />
+         <h:outputText value="#{car.year}" />
+      </h:panelGrid>
+   </p:rowExpansion>
+</p:dataTable>

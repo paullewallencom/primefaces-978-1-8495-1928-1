@@ -1,0 +1,2 @@
+<p:fileUpload fileUploadListener="#{fileBean.handleFileUpload}"
+              sizeLimit="10240" />

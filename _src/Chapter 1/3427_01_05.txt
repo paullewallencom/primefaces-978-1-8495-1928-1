@@ -1,0 +1,2 @@
+<p:commandButton update="display" action="#{basicPPRBean.updateValue}" value="Update" />
+<h:outputText id="display" value="#{basicPPRBean.value}"/>

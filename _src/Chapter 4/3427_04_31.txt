@@ -1,0 +1,6 @@
+<p:ajax event="toggle" listener="#{layoutBean.handleToggle}"
+        update="growl" />
+<p:ajax event="close" listener="#{layoutBean.handleClose}"
+        update="growl" />
+<p:ajax event="resize" listener="#{layoutBean.handleResize}"
+        update="growl" />

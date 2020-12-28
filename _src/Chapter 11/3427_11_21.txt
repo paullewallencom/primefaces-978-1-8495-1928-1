@@ -1,0 +1,5 @@
+<style type="text/css">
+    .ui-layout-pane-north .ui-layout-unit-content {
+        overflow: visible;
+    }
+</style>

@@ -1,0 +1,9 @@
+<p:treeTable id="sorted" value="#{treeTableBean.root}"
+             var="element" style="width: 400px;">
+   <f:facet name="header">Tree Table</f:facet>
+   <p:column sortBy="#{element.name}">
+      <f:facet name="header">Name</f:facet>
+      <h:outputText value="#{element.name}" />
+   </p:column>
+   ...
+<p:treeTable>

@@ -1,0 +1,2 @@
+DualListModel<Car> cars =
+   new DualListModel<Car>(carsSource, carsTarget);

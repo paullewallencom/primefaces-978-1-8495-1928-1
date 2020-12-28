@@ -1,0 +1,4 @@
+<context-param>
+    <param-name>javax.faces.FACELETS_BUFFER_SIZE</param-name>
+    <param-value>65535</param-value>
+</context-param>

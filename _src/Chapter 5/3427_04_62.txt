@@ -1,0 +1,15 @@
+<p:tree id="withAJAX" value="#{treeDataBean.root}" var="node"
+        selectionMode="single"
+        selection="#{treeDataBean.selectedNode}">
+   <p:ajax event="expand" update=":mainForm:growl"
+           listener="#{treeDataBean.onNodeExpand}" />
+   <p:ajax event="collapse" update=":mainForm:growl"
+           listener="#{treeDataBean.onNodeCollapse}" />
+   <p:ajax event="select" update=":mainForm:growl"
+           listener="#{treeDataBean.onNodeSelect}" />
+   <p:ajax event="unselect" update=":mainForm:growl"
+           listener="#{treeDataBean.onNodeUnselect}" />
+   <p:treeNode>
+      <h:outputText value="#{node}" />
+   </p:treeNode>
+</p:tree>

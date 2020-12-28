@@ -1,0 +1,18 @@
+@Named
+@ViewScoped
+public class ExtendCsvBean implements Serializable {
+
+    @NotNull
+    private String card;
+    @NotNull
+    @ValidCVC(forCardMenu = "@(.card)")
+    private Integer cvc;
+
+    public void save() {
+        RequestContext.getCurrentInstance().execute(
+                "alert('Saved!')");
+    }
+	
+	// getters / setters
+	...
+}

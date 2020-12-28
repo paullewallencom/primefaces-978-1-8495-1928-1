@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<facelet-taglib version="2.2" ...>
+    <namespace>
+	    http://primefaces.org/ui/cookbook
+    </namespace>
+
+    <tag>
+        <tag-name>validateUnicode</tag-name>
+        <validator>
+            <validator-id>
+                org.primefaces.cookbook.UnicodeValidator
+            </validator-id>
+        </validator>
+        <attribute>
+            <name>msgparam</name>
+            <required>true</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</facelet-taglib>

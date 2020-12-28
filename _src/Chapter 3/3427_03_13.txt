@@ -1,0 +1,16 @@
+<p:autoComplete id="itemTip"
+     value="#{autoCompleteBean.selectedCar2}"
+     completeMethod="#{autoCompleteBean.completeCar}"
+     var="car" itemLabel="#{car.name}" itemValue="#{car}">
+     <f:converter
+ converterId="org.primefaces.cookbook.converter.CarConverter" />
+     <f:facet name="itemtip">
+        <h:panelGrid columns="2" cellpadding="5">
+            <p:graphicImage 
+        value="/resources/images/autocomplete/#{car.name}.png" 
+        width="80" height="50"/>
+            <h:outputText value="#{car.name} &lt;br/&gt; 
+                                 #{car.year}" escape="false" />
+        </h:panelGrid>
+    </f:facet>
+</p:autoComplete>

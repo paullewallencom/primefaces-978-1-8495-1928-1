@@ -1,0 +1,31 @@
+@Named
+@ViewScoped
+public class RequestContextBean implements Serializable {
+
+	private boolean firstOutput = true;
+	private int counter = 0;
+
+	public void incrementWithUpdate(ActionEvent ae) {
+		counter++;
+
+		RequestContext requestContext =
+                RequestContext.getCurrentInstance();
+
+		if (firstOutput) {
+			requestContext.update("firstOutput");
+		} else {
+			requestContext.update("secondOutput");
+		}
+	}
+
+	public void incrementWithScroll(ActionEvent ae) {
+		counter++;
+
+		RequestContext requestContext =
+                RequestContext.getCurrentInstance();
+		requestContext.scrollTo("counter");
+	}
+
+	// getters / setters
+	...
+}

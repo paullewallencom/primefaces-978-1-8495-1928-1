@@ -1,0 +1,6 @@
+<p:orderList id="withCaption" value="#{orderListBean.countries}"
+   var="country" itemLabel="#{country}" itemValue="#{country}">
+   <f:facet name="caption">
+      Countries
+   </f:facet>
+</p:orderList>

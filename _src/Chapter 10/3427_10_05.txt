@@ -1,0 +1,2 @@
+<h:outputScript library="js"
+	name="lang_#{facesContext.viewRoot.locale.language}.js"/>

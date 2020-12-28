@@ -1,0 +1,11 @@
+<p:dataTable id="withFilterOptions" var="car"
+             value="#{dataTableBean.cars}" style="width: 300px;">
+   <p:column headerText="Year" filterBy="#{car.year}"
+             filterMatchMode="startsWith">
+      <h:outputText value="#{car.year}" />
+   </p:column>
+   <p:column headerText="Name" filterBy="#{car.name}"
+             filterOptions="#{dataTableBean.carNamesAsOptions}">
+      <h:outputText value="#{car.name}" />
+   </p:column>
+</p:dataTable>

@@ -1,0 +1,11 @@
+<p:dataTable id="ajaxBehaviour" var="car" rowKey="#{car.name}"
+             value="#{dataTableBean.cars}"
+             selection="#{dataTableBean.selectedCar}" 
+             selectionMode="single">
+   <p:column headerText="Year">#{car.year}</p:column>
+   <p:column headerText="Name">#{car.name}</p:column>
+   <p:ajax event="rowSelect" update=":mainForm:growl"
+           listener="#{dataTableBean.onRowSelect}" />
+   <p:ajax event="rowUnselect" update=":mainForm:growl"
+           listener="#{dataTableBean.onRowUnselect}" />
+</p:dataTable>

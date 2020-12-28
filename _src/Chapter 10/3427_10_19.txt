@@ -1,0 +1,10 @@
+PrimeFaces.locales['en'] = {
+    messages : PrimeFaces.locales['en_US'].messages
+};
+
+$.extend(PrimeFaces.locales['en'].messages, {
+    ...
+    
+    'invalid.unicode':
+        '{0} may only contain letters, spaces, hyphens and apostrophes'
+});

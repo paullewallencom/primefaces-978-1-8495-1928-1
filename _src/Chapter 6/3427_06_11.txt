@@ -1,0 +1,11 @@
+<p:breadCrumb>
+    <p:menuitem value="PrimeFaces" url="http://primefaces.org"/>
+    <p:menuitem value="jQuery" url="http://jquery.com"/>
+    <p:menuitem value="Yahoo UI" url="http://yuilibrary.com"/>
+    <p:menuitem value="Save"
+                actionListener="#{positionedMenuBean.save}"
+                update="growl"/>
+    <p:menuitem value="Update"
+                actionListener="#{positionedMenuBean.update}"
+                update="growl"/>
+</p:breadCrumb>

@@ -1,0 +1,10 @@
+PrimeFaces.locales['en'] = {
+    messages : PrimeFaces.locales['en_US'].messages
+};
+
+$.extend(PrimeFaces.locales['en'].messages, {
+    ...
+	
+    'invalid.cvc':
+        'Card Validation Code is invalid'
+});

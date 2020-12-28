@@ -1,0 +1,4 @@
+<p:ajax event="rowEdit" listener="#{dataTableBean.onEdit}"
+        update=":form:growl" />
+<p:ajax event="rowEditCancel" listener="#{dataTableBean.onCancel}"
+        update=":form:growl" />

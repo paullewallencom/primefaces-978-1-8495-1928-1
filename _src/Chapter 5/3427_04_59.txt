@@ -1,0 +1,15 @@
+<p:tree id="single" value="#{treeDataBean.root}" var="node"
+        selectionMode="single"
+        selection="#{treeDataBean.selectedNode}">
+   <p:treeNode>
+      <h:outputText value="#{node}" />
+   </p:treeNode>
+</p:tree>
+
+<p:tree id="multiple" value="#{treeDataBean.root}" var="node"
+        selectionMode="multiple"
+        selection="#{treeDataBean.selectedNodes}">
+   <p:treeNode>
+      <h:outputText value="#{node}" />
+   </p:treeNode>
+</p:tree>

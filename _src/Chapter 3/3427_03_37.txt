@@ -1,0 +1,4 @@
+<f:passThroughAttribute name="onkeypress" 
+                        value="return false;" />
+<f:passThroughAttribute name="onpaste" 
+                        value="return false;" />

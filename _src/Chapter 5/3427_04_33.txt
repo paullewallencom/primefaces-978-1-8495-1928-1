@@ -1,0 +1,15 @@
+<p:dataTable id="withPriority" var="car"
+             value="#{dataTableBean.detailedCars}">
+   <p:column headerText="Name">
+      <h:outputText value="#{car.name}" />
+   </p:column>
+   <p:column headerText="Year" priority="1">
+      <h:outputText value="#{car.year}" />
+   </p:column>
+   <p:column headerText="Color" priority="3">
+      <h:outputText value="#{car.color}" />
+   </p:column>
+   <p:column headerText="Seat Number" priority="2">
+      <h:outputText value="#{car.seatNumber}" />
+   </p:column>
+</p:dataTable>

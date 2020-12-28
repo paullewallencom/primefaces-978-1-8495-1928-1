@@ -1,0 +1,40 @@
+@Named
+@ViewScoped
+public class DialogFrameworkBean implements Serializable {
+
+    private String bookName;
+
+    public void showRatingDialog() {
+        Map<String, Object> options =
+                new HashMap<String, Object>();
+        options.put("modal", true);
+        options.put("draggable", false);
+        options.put("resizable", false);
+        options.put("contentWidth", 500);
+        options.put("contentHeight", 100);
+        options.put("includeViewParams", true);
+
+        Map<String, List<String>> params =
+                new HashMap<String, List<String>>();
+        List<String> values = new ArrayList<String>();
+        values.add(bookName);
+        params.put("bookName", values);
+
+        RequestContext.getCurrentInstance().openDialog(
+            "/views/chapter11/bookRating", options, params);
+    }
+
+    public void onDialogReturn(SelectEvent event) {
+        Object rating = event.getObject();
+        FacesMessage message = new FacesMessage(
+                FacesMessage.SEVERITY_INFO,
+                "You rated the book with " + rating,
+                null);
+
+        FacesContext.getCurrentInstance().addMessage(
+                null, message);
+    }
+
+    // getters / setters
+	...
+}

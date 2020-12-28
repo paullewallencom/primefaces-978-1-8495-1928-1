@@ -1,0 +1,4 @@
+<p:dataTable value="#{dataTableBean.cars}" var="car"
+             draggableRows="true" draggableColumns="true">
+...
+</p:dataTable>

@@ -1,0 +1,13 @@
+<p:menuButton value="CRUD Operations" iconPos="right">
+    <p:menuitem value="Save"
+                actionListener="#{menuButtonBean.save}"
+                icon="ui-icon-disk" update="growl"/>
+    <p:menuitem value="Update"
+                actionListener="#{menuButtonBean.update}"
+                icon="ui-icon-arrowrefresh-1-w" update="growl"/>
+    <p:menuitem value="Delete"
+                actionListener="#{menuButtonBean.delete}"
+                icon="ui-icon-close" update="growl"/>
+    <p:separator/>
+    <p:menuitem value="PrimeFaces" url="http://primefaces.org"/>
+</p:menuButton>

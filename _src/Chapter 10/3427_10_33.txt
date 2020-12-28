@@ -1,0 +1,6 @@
+BeanValidationMetadataMapper.registerConstraintMapping(
+    Class<? extends Annotation> constraint,
+    ClientValidationConstraint clientValidationConstraint);
+	
+BeanValidationMetadataMapper.removeConstraintMapping(
+    Class<? extends Annotation> constraint);

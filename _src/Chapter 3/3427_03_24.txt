@@ -1,0 +1,4 @@
+<p:selectOneMenu>
+   <f:selectItem itemLabel="English" itemValue="en"/>
+   <f:selectItem itemLabel="Turkish" itemValue="tr"/>
+</p:selectOneMenu>

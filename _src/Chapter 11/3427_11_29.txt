@@ -1,0 +1,13 @@
+<h:panelGrid id="langGrid" columns="2"
+             style="box-shadow: none;">
+    <p:outputLabel for="lang" value="Language: "/>
+    <p:selectOneMenu id="lang">
+        <f:selectItem itemLabel="English" itemValue="en"/>
+        <f:selectItem itemLabel="German" itemValue="de"/>
+        <f:selectItem itemLabel="French" itemValue="fr"/>
+    </p:selectOneMenu>
+</h:panelGrid>
+
+...
+
+<p:sticky target="langGrid"/>

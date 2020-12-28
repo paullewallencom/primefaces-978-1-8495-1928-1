@@ -1,0 +1,4 @@
+<p:commandButton value="Show Dialog" onclick="PF('arabicDlg').show();" type="button" />
+<p:dialog widgetVar="arabicDlg" dir="rtl">
+    <h:outputText value="PrimeFaces هو مصدر للمساهمة في المشروع المكون جناح مفتوح مع الملحقات المختلفة." />
+</p:dialog>

@@ -1,0 +1,3 @@
+<p:pickList id="withCustomJS" onTransfer="handleTransfer(e)"
+   value="#{pickListBean.countries}" var="country"
+   itemLabel="#{country}" itemValue="#{country}" />

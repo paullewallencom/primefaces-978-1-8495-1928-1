@@ -1,0 +1,19 @@
+<p:tree id="dndSource" value="#{treeDataBean.root}" var="node"
+        selectionMode="single"
+        selection="#{treeDataBean.selectedNode1}"
+        draggable="true" droppable="true" 
+        dragdropScope="treeScope">
+   <p:treeNode>
+      <h:outputText value="#{node}" />
+   </p:treeNode>
+</p:tree>
+
+<p:tree id="dndTarget" value="#{treeDataBean.root2}" var="node"
+        selectionMode="single"
+        selection="#{treeDataBean.selectedNode2}"
+        draggable="true" droppable="true"
+        dragdropScope="treeScope">
+   <p:treeNode>
+      <h:outputText value="#{node}" />
+   </p:treeNode>
+</p:tree>

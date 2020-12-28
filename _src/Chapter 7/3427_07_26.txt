@@ -1,0 +1,5 @@
+<p:galleria id="withData" value="#{galleriaBean.cars}" 
+  var="car" panelWidth="380" panelHeight="220">
+   <p:graphicImage
+      value="/resources/images/autocomplete/#{car.name}.png" />
+</p:galleria>

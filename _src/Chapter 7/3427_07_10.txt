@@ -1,0 +1,2 @@
+<p:fileUpload id="multipleUpload" multiple="true" update="growl"
+   fileUploadListener="#{fileBean.handleFileUpload}" />

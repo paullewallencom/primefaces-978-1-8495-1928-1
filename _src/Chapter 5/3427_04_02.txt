@@ -1,0 +1,8 @@
+<p:commandButton value="Select" update=":mainForm:display"
+                 oncomplete="PF('carDialog').show()"
+                 action="#{dataTableBean.selectCar(car)}" />
+
+public String selectCar(Car car) {
+   this.selectedCar = car;
+   return null;
+}

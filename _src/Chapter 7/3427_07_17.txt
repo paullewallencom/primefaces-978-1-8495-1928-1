@@ -1,0 +1,8 @@
+<script type="text/javascript">
+   function showStatus() {
+      statusDialog’).show();
+   }
+   function hideStatus() {
+       PF(‘statusDialog’).hide();
+   }
+</script>

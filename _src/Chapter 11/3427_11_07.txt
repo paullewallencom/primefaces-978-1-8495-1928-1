@@ -1,0 +1,19 @@
+<p:growl id="growl" autoUpdate="true"/>
+
+<p:dialog header="What is the name of this book?"
+          visible="true" widgetVar="dlgWidget">
+    <p:inputText id="name" value="#{ajaxCallbackParamBean.name}"/>
+
+    <p:commandButton id="save" value="Save" style="margin:10px;"
+            process="@this name" update="name"
+            actionListener="#{ajaxCallbackParamBean.save}"
+            oncomplete="handleComplete(xhr, status, args)"/>
+</p:dialog>
+
+<h:outputScript id="handleCompleteScript" target="body">
+    function handleComplete(xhr, status, args) {
+        if (args && args.validName) {
+            PF('dlgWidget').hide();
+        }
+    }
+</h:outputScript>

@@ -1,0 +1,9 @@
+<p:accordionPanel>
+   <p:ajax event="tabChange" 
+      listener="#{accordionPanelBean.onTabChange}"
+      update=":mainForm:growl" />
+   <p:ajax event="tabClose"
+        listener="#{accordionPanelBean.onTabClose}"
+        update=":mainForm:growl" />
+   ...
+</p:accordionPanel>

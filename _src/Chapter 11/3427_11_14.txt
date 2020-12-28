@@ -1,0 +1,19 @@
+@Named
+@RequestScoped
+public class BookRatingBean {
+
+    private String bookName;
+
+    public void onrate(RateEvent rateEvent) {
+        RequestContext.getCurrentInstance()
+                .closeDialog(rateEvent.getRating());
+    }
+
+    public void oncancel() {
+        RequestContext.getCurrentInstance()
+                .closeDialog(0);
+    }
+
+    // getters / setters
+	...
+}

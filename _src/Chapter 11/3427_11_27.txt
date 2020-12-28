@@ -1,0 +1,10 @@
+<p:dataTable value="#{dataTableColoringBean.countryGdpList}"
+        var="countryGdp"
+        rowStyleClass="#{countryGdp.gdp le 3500000 ? 'colored' : ''}">
+    <p:column headerText="Name" sortBy="#{countryGdp.name}">
+        #{countryGdp.name}
+    </p:column>
+    <p:column headerText="GDP (Millions of US $)">
+        #{countryGdp.gdp}
+    </p:column>
+</p:dataTable>

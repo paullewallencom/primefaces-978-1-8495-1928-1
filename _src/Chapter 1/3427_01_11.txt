@@ -1,0 +1,19 @@
+<p:fragment autoUpdate="true">
+	<p:fieldset legend="Basic Info">
+		<p:outputLabel for="name" value="Name:" />
+		<p:inputText id="name" 
+value="#{fragmentBean.userName}" required="true" />
+		<p:commandButton value="Save" 
+actionListener="#{fragmentBean.saveUserInfo}" />
+	</p:fieldset>
+</p:fragment>
+
+<p:fragment autoUpdate="true">
+	<p:fieldset legend="Address">
+		<p:outputLabel for="address" value="Address:" />
+		<p:inputText id="address" 
+value="#{fragmentBean.address}" required="true" />
+		<p:commandButton value="Save" 
+actionListener="#{fragmentBean.saveAddressInfo}" />
+	</p:fieldset>
+</p:fragment>

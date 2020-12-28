@@ -1,0 +1,11 @@
+<p:dataList value="#{dataListBean.countries}" var="country"
+       rows="10" paginator="true"
+       paginatorTemplate="{CurrentPageReport} {CustomContent}">
+   <f:facet name="{CustomContent}">
+      ..custom content..
+   </f:facet>
+   <f:facet name="header">
+      Countries
+   </f:facet>
+   <h:outputText value="#{country}" />
+</p:dataList>

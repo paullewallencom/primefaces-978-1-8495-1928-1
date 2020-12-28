@@ -1,0 +1,36 @@
+@Named
+@ViewScoped
+public class AjaxCallbackParamBean implements Serializable {
+
+    private String name;
+
+    public void save(ActionEvent ae) {
+        RequestContext requestContext =
+                RequestContext.getCurrentInstance();
+
+        String message;
+        FacesMessage.Severity severity;
+        UIInput input = (UIInput) ae.getComponent().
+                findComponent("name");
+
+        if ("PrimeFaces Cookbook".equals(name)) {
+            message = "All right!";
+            severity = FacesMessage.SEVERITY_INFO;
+
+            requestContext.addCallbackParam("validName", true);
+            input.setValid(true);
+        } else {
+            message = "Name is wrong, try again";
+            severity = FacesMessage.SEVERITY_ERROR;
+
+            requestContext.addCallbackParam("validName", false);
+            input.setValid(false);
+        }
+
+        FacesMessage msg = new FacesMessage(severity, message, null);
+        FacesContext.getCurrentInstance().addMessage(null, msg);
+    }
+
+    // getters / setters
+	...
+}

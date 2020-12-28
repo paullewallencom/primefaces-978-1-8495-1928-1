@@ -1,0 +1,6 @@
+private List<Boolean> visibleList;
+
+public void onColumnToggle(ToggleEvent e) {
+   visibleList.set((Integer) e.getData(),
+        e.getVisibility() == Visibility.VISIBLE);
+}

@@ -1,0 +1,2 @@
+<p:gmap center="41.106261, 29.057465" zoom="10" type="hybrid"
+        style="width:600px;height:400px" />

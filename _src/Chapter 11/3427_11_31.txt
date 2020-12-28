@@ -1,0 +1,4 @@
+<context-param>
+    <param-name>primefaces.CACHE_PROVIDER</param-name>
+    <param-value>org.primefaces.cache.EHCacheProvider</param-value>
+</context-param>

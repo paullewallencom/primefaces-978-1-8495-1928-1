@@ -1,0 +1,20 @@
+<p:dataTable id="colToggleAJAX" var="car"
+             value="#{dataTableBean.cars}">
+   <f:facet name="header">
+      <p:commandButton id="togglerAJAX" type="button"
+                       value="Columns" />
+      <p:columnToggler datasource="colToggleAJAX" 
+                       trigger="togglerAJAX">
+         <p:ajax event="toggle" update=":mainForm:growl"
+                 listener="#{dataTableBean.onColumnToggle}" />
+      </p:columnToggler>
+   </f:facet>
+   <p:column headerText="Year"
+             visible="#{dataTableBean.visibleList[0]}">
+      <h:outputText value="#{car.year}" />
+   </p:column>
+   <p:column headerText="Name"
+             visible="#{dataTableBean.visibleList[1]}">
+      <h:outputText value="#{car.name}" />
+   </p:column>
+</p:dataTable>

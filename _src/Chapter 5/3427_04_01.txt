@@ -1,0 +1,12 @@
+<p:dataTable id="withCommand" var="car"
+             value="#{dataTableBean.cars}"
+             selection="#{dataTableBean.selectedCar}">
+   <p:column>
+      <p:commandButton value="Select" update=":mainForm:display"
+                       oncomplete="carDialog.show()">
+          <f:setPropertyActionListener value="#{car}"
+                        target="#{dataTableBean.selectedCar}" />
+      </p:commandButton>
+   </p:column>
+   ...
+</p:dataTable>

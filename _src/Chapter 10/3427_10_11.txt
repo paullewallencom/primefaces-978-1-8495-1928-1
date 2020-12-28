@@ -1,0 +1,21 @@
+<p:dialog header="Input values" closeOnEscape="true"
+        visible="#{facesContext.postback and !facesContext.validationFailed}"
+        widgetVar="inputValuesWdgt">
+    <h:panelGrid id="inputValues" columns="1" cellpadding="3">
+        <h:outputText value="#{bvBean.supported}"/>
+        <h:outputText value="#{bvBean.active}"/>
+        <h:outputText value="#{bvBean.discount}"/>
+        <h:outputText value="#{bvBean.price}"/>
+        <h:outputText value="#{bvBean.eventDate}">
+            <f:convertDateTime pattern="MM/dd/yyyy"/>
+        </h:outputText>
+        <h:outputText value="#{bvBean.birthday}">
+            <f:convertDateTime pattern="MM/dd/yyyy"/>
+        </h:outputText>
+        <h:outputText value="#{bvBean.quantity}"/>
+        <h:outputText value="#{bvBean.username}"/>
+        <h:outputText value="#{bvBean.unusedString}"/>
+        <h:outputText value="#{bvBean.phoneNumber}"/>
+        <h:outputText value="#{bvBean.briefMessage}"/>
+    </h:panelGrid>
+</p:dialog>

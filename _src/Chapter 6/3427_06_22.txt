@@ -1,0 +1,4 @@
+<p:selectCheckboxMenu label="Colors"
+        value="#{checkboxMenuBean.selectedColors}">
+    <f:selectItems value="#{checkboxMenuBean.colors}"/>
+</p:selectCheckboxMenu>

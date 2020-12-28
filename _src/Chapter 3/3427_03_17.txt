@@ -1,0 +1,6 @@
+<p:inputTextarea value="#{inputTextAreaBean.value}"
+   counter="display2" maxlength="20" 
+   counterTemplate="{0} characters remaining">
+ <f:passThroughAttribute name="onpaste" 
+                         value="return false;" />
+</p:inputTextarea>

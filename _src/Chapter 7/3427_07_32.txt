@@ -1,0 +1,6 @@
+<p:contentFlow id="withData" value="#{contentFlowBean.cars}"
+               var="car">
+   <p:graphicImage
+     value="/resources/images/autocomplete/#{car.name}.png"
+     styleClass="content" />
+</p:contentFlow>
